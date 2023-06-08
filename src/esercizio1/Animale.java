@@ -1,3 +1,5 @@
+package esercizio1;
+
 public abstract class Animale {
 
     private String nome;

@@ -1,4 +1,6 @@
-public class Aquila extends Animale {
+package esercizio1;
+
+public class Aquila extends Animale implements Volante {
 
     public Aquila(String nome) {
         super(nome);
@@ -12,5 +14,10 @@ public class Aquila extends Animale {
     @Override
     void mangia() {
         System.out.println("Carne");
+    }
+
+    @Override
+    public void vola() {
+        System.out.println("Sto Volando!");
     }
 }

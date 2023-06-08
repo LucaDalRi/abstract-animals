@@ -1,12 +1,14 @@
-public class Delfino extends Animale {
+package esercizio1;
 
-    public Delfino(String nome) {
+public class Cane extends Animale {
+
+    public Cane(String nome) {
         super(nome);
     }
 
     @Override
     void verso() {
-        System.out.println("Cri Cri");
+        System.out.println("Bau Bau");
     }
 
     @Override
