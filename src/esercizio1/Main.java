@@ -20,6 +20,8 @@ public class Main {
         passerotto.verso();
         System.out.println("e mangia");
         passerotto.mangia();
+        System.out.println("Ora faccio volare il passerotto");
+        faiVolare(passerotto);
         System.out.println("e ora va a dormire");
         passerotto.dormi();
         System.out.println("----------------------");
@@ -27,6 +29,8 @@ public class Main {
         aquila.verso();
         System.out.println("e mangia");
         aquila.mangia();
+        System.out.println("Ora faccio volare il l'aquila");
+        faiVolare(aquila);
         System.out.println("e ora va a dormire");
         aquila.dormi();
         System.out.println("----------------------");
@@ -34,10 +38,21 @@ public class Main {
         delfino.verso();
         System.out.println("e mangia");
         delfino.mangia();
+        System.out.println("Ora faccio nuotare il delfino");
+        faiNuotare(delfino);
         System.out.println("e ora va a dormire");
         delfino.dormi();
         System.out.println("----------------------");
 
+    }
 
+    private static void faiVolare(Volante animale) {
+        animale.vola();
+    }
+
+    public static void faiNuotare(Nuotatore animale) {
+        animale.nuota();
     }
 }
+
+
